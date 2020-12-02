@@ -31,6 +31,10 @@ void unite(int x, int y) { // unites two components
 	size[a] += size[b]; 
 	link[b] = a; 
 }
+void reset() {
+	FOR(i, mx-2) link[i] = i; 
+	FOR(i, mx-2) size[i] = 1; 
+}
 int main() {
 	; 
 }
